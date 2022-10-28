@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
+        inflater.inflate(R.menu.exemplo, menu);
         return super.onCreateOptionsMenu(menu);
     }
     //Criando método para clicar nos itens do menu
@@ -29,36 +29,32 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.mFav:
+            case R.id.mCadastrar:
                 Toast.makeText(getApplicationContext(),
-                        "Cliquei nos favoritos",
+                        "Cliquei no Cadastrar",
                         Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.mBuscar:
+            case R.id.mComsultar:
                 Toast.makeText(getApplicationContext(),
-                        "Cliquei no Buscar",
+                        "Cliquei no Comsultar",
                         Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.mConfiguracoes:
+            case R.id.mExcluir:
                 Toast.makeText(getApplicationContext(),
-                        "Cliquei em configurações",
+                        "Cliquei no Excluir",
                         Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.mHistorico:
+            case R.id.mALterar:
                 Toast.makeText(getApplicationContext(),
-                        "Cliquei no histórico",
+                        "Cliquei no ALterar",
                         Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.mSobre:
+            case R.id.mDinheiro:
                 Toast.makeText(getApplicationContext(),
-                        "Cliquei no sobre",
+                        "Cliquei no Dinheiro",
                         Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.mCompartilhar:
-                Toast.makeText(getApplicationContext(),
-                        "Cliquei em compartilhar",
-                        Toast.LENGTH_SHORT).show();
-                break;
+
         }
 
         return super.onOptionsItemSelected(item);
