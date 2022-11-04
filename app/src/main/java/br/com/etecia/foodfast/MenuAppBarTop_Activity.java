@@ -46,7 +46,7 @@ public class MenuAppBarTop_Activity extends AppCompatActivity {
                 }
 
 
-                return false;
+                return true;
             }
         });
 
