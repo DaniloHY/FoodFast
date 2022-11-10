@@ -22,4 +22,5 @@
         android:src="@drawable/ic_baseline_add"
         app:layout_anchor="@id/idBottomAppBar" />
 
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
