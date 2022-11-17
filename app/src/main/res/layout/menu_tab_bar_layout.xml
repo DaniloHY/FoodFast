@@ -7,10 +7,10 @@
     tools:context=".MenuTabBar_Activity">
 
     <com.google.android.material.tabs.TabLayout
-        android:background="#7C1A29"
         android:id="@+id/idTabLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="#7C1A29">
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/idPorcoes"
@@ -31,10 +31,10 @@
             android:text="Lanches" />
     </com.google.android.material.tabs.TabLayout>
 
-    <include layout="@layout/fragment_porcoes"
-        android:layout_height="wrap_content"
+    <include
+        layout="@layout/fragment_porcoes"
         android:layout_width="match_parent"
-        android:layout_below="@id/idTabLayout"
-        />
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTabLayout" />
 
 </RelativeLayout>
