@@ -1,73 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
-android:layout_height="200dp"
-android:background="#009688"
-android:orientation="vertical">
-
-<LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal">
-
-    <ImageView
-        android:layout_margin="20dp"
-        android:id="@+id/imgPizza"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:scaleType="centerCrop"
-        android:src="#2c2c2c" />
+    android:layout_height="200dp"
+    android:background="#009688"
+    android:orientation="vertical">
 
     <LinearLayout
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-        <TextView
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#000"
-            android:layout_gravity="center_horizontal"
-            android:id="@+id/txtTituloPizza"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pizza de Mussarela" />
-
-        <TextView
-            android:id="@+id/txtDescricaoPizza"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Descrição da Pizza" />
+        <ImageView
+            android:id="@+id/imgPizza"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pizza" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RatingBar
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:numStars="1" />
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/txtAvaliacaoPizza"
+                android:id="@+id/txtTituloPizza"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4.5" />
+                android:layout_gravity="center_horizontal"
+                android:text="Pizza de Mussarela"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-            <ImageView
+            <TextView
+                android:id="@+id/txtDescricaoPizza"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_share" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/descricao"
+                android:textColor="#000"
+                android:textSize="10sp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_favorite" />
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:numStars="1" />
+
+                <TextView
+                    android:id="@+id/txtAvaliacaoPizza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="4.5"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:src="@drawable/ic_baseline_share" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_baseline_favorite" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
 
-</LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
